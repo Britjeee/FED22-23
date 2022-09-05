@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  https://www.moetiknaardedokter.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homescherm van Moet Ik Naar De Dokter
+  Homepagina van MINDD
   <img src="readme-images/MINDD-plaatje1.jpg" width="375px" alt="Homescherm van Moet Ik Naar De Dokter">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Promotiemateriaal pagina van Moet Ik Naar De Dokter
+  Promotiemateriaal pagina van MINDD
   <img src="readme-images/MINDD-plaatje2.jpg" width="375px" alt="Promotiemateriaal pagina van Moet Ik Naar De Dokter">
  
 </details>
