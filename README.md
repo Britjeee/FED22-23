@@ -40,10 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina van MINDD
+  
   <img src="readme-images/MINDD-plaatje1.jpg" width="375px" alt="Homescherm van Moet Ik Naar De Dokter">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Promotiemateriaal pagina van MINDD
+  
   <img src="readme-images/MINDD-plaatje2.jpg" width="375px" alt="Promotiemateriaal pagina van Moet Ik Naar De Dokter">
  
 </details>
@@ -60,25 +62,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+- logo heeft een alt tekst. (Uitleg van wat het is)
+- talen worden in de engelse reader nog steeds nederlands opgenoemd
+- bij de widget is de tekst onduidelijk dat je een vragenlijst gaat invullen
+- vraag 2 widget: het invul veld word gelijk opgenoemd en niet de vraag
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
+  
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
+  
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+- goed toegankelijk
+- ondertiteling filmpjes talen zijn beperkt
+- buttons zijn groot genoeg om op te klikken
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
+  
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+- Darkmodus: niet aanwezig
+- Kleurenblind: de kleuren zijn nog steeds goed te onderscheiden van elkaar
+- Contrast: contrast is goed. Buttons zien er alleen niet altijd uit als buttons.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
