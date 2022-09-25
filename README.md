@@ -159,7 +159,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  - Het maken van een drop down menu was lastig en ik vind het lastig dat ik geen id's en classes mag gebruiken voor de styling.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -174,10 +174,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - punt 1: drop down menu (klein en groot scherm) + animatie (behandeld)
+  https://codepen.io/shooft/pen/gOzGoww
+  https://codepen.io/shooft/pen/poVWpQQ
+  - punt 2: @media hoe maak je je website responsive (behandeld)
+  https://codepen.io/shooft/pen/YzLrEJo
+  - punt 3: grid maken voor je content (behandeld)
+  
+  - punt 4: elementen herkennen / h1 verbergen voor zicht, maar wel leesbaar voor screenreader. (behandeld)
+  https://alistapart.com/article/now-you-see-me/
+  https://www.a11yproject.com/posts/how-to-hide-content/
+
 
 </details>
 
