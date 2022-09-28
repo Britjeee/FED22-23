@@ -202,25 +202,65 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  
+- buttons worden niet als buttons aangegeven
+- links zijn niet allemaal linkjes
++ Alle kopjes worden aangegeven
+  
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  tap:
+- niet alle linkjes zijn nog linkjes
++ Alle links die in de html linkjes werken met tap
+
+  hover:
+- hover nog niet ingesteld
+- hover over h1 en p ziet er uit alsof je kunt typen
+  
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  concentratieproblemen:
+- De ballon leidt te veel af, maar heeft niet met de website te maken
+
+  Slechte motoriek:
++ scrollen werkt nog steeds
++ buttons zijn klikbaar
++ e-mail invullen werkt nog steeds
+
+visuele beperking:
+
+  vlekken in het oog=
+- gebruikersvoorwaarden is niet niet zichtbaar
++ Site is verder nog prima zichtbaar
+
+  tunnelvisie=
++ Site is goed zichtbaar
+- Ik kon mijn muis niet vinden
+   
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  slecht ziend / kleuren:
+- blurred vision: klachten namen zijn moeilijk leesbaar, gebruikersvoorwaarden is niet goed zichtbaar
++ kleuren zijn nog duidelijk
++ contrast is goed
+- dark modus: niet aanwezig
+  
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
