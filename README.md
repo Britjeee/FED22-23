@@ -334,19 +334,24 @@ visuele beperking:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/resultaat.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+	Ik ben erg trots op mijn code en met name de css, omdat ik hier vorig jaar wat problemen mee heb gehad. Ik snap een stuk beter wat de logica is achter code. (Dit is er niet alijd, maar ik bedoel wanneer dat wel zo is). Voorheen vond ik het verschil tussen parent en child lastig, maar door veel te oefenen snap ik dit nu wel. 
+  <img src="readme-images/trots.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+	Ik vond de uitdaging van geen id, class of div gebruiken wel lastig. Het helpt je namelijk ook om je elementen te ordenen door ze relevante namen te geven. Het helpt om ze makkelijker aan te roepen in CSS en JS, maar ook voor je eige overzicht. Het is uiteindelijk alsnog gelukt om elementen aan te roepen (de footer wat minder goed). Ik ben soms iets te perfectionistisch geweest op hoe iets eruit ziet, waardoor ik minder tijd heb kunnen besteden aan het fine-tunen van mijn code. (toegankelijkheid, extra toevoegingen ect.)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Waarschijnlijk heb ik in mijn code iets te vaak het gedrag gemanipuleerd in de CSS waardoor de tekst in de footer niet wilt doen wat ik vraag. Dit vind ik wel jammer, want de rest van de website vind ik echt super goed gelukt.
+ <img src="readme-images/verbeterpunt1.png" width="375px" alt="bummer">	
+	
+In verband met tijd is het me ook niet meer gelukt om buttons toe te voegen aan de video's om ze af te laten spelen en stoppen in JS. Ik had dit graag nog toe willen voegen. 
+ <img src="readme-images/verbeterpunt2.png" width="375px" alt="bummer">
 </details>
 
 
