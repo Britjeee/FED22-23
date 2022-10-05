@@ -105,7 +105,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/mindd-breakdown-pagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -119,40 +119,66 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Voortgang 1 (week 2)
+## Voortgang 1 (week 3 inhalen: 27sep)
 
 <details>
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Het lukte nog niet helemaal met mijn hamburger menu. Verder had ik wat vragen over de uitwerking en wat wel mag en wat niet. Ook kreeg ik mijn afbeeldingen niet helemaal netjes
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Britney      | Michelle         | Rosalie    | Tijme        |
+  | Toestemming class/id voor het benadrukken van tekst en voor images?            
+  | In hoeverre moet de website uitgewerkt worden?  
+  | Witruimte weghalen tussen een banner img en marquee             
+  | Strepen tussen tekst in de footer?   
+  | Dark mode  
+  | Background image en transparante header
+  | Hulp bij grid uitlijnen
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Toestemming class/ id: Nee, voor benadrukken van tekst <em>Emphasis element</em> gebruiken.
+  - Uitwerking website: het moet lijken op de echte website (mobile first), 2 pagina's uitwerken, niet alle linkjes hoeven te werken.
+  - Strepen tussen tekst en footer: https://codepen.io/shooft/pen/oNdppMr
+  - Darkmode: (bijv.)
+  @media (prefers-color-scheme: dark) {
+  .day.dark-scheme {
+    background: #333;
+    color: white;
+  }
+  .night.dark-scheme {
+    background: black;
+    color: #ddd;
+  }
+}
 
+@media (prefers-color-scheme: light) {
+  .day.light-scheme {
+    background: white;
+    color: #555;
+  }
+  .night.light-scheme {
+    background: #eee;
+    color: black;
+  }
+}
+- Background image en transparante header: dezelfde img in header en body zetten (juist uitlijnen), header sticky maken + een lijntje toevoegen als scheiding.
+- Hulp bij grid uitlijnen: grootte van het grid aanpassen en padding aanpassen. 
 </details>
 
 
 
 
 
-## Voortgang 2 (week 3)
+## Voortgang 2 (week 3 23sep)
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
@@ -164,7 +190,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        
+  | Aaron      | Britney          | Julia    | Quinny      
   | @media
   | Drop down menu
   | Grid maken
@@ -192,7 +218,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Toegankelijkheidstest 2/2 (week 4)
+## Toegankelijkheidstest 2/2 (week 4 30sep)
 
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
@@ -276,25 +302,25 @@ visuele beperking:
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+- Ik was goed op weg en bijna klaar met mijn 1e pagina. Wel heb ik om mijn header menu te fixen heel mijn code moeten om gooien. Het menu werkt nu. Ik merk dat ik de logica achter de code steeds meer begin te snappen. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Aaron      | Britney          | Julia    | Quinny        |
+  | Responsiveness - logo verplaatsen in grid
+  | Hulp bij aanroepen img en button
+  | Hulp bij dropdown menu met sub menu's
+  
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Responsiveness - logo verplaatsen: logo(img) positioneren, achtergrond kleur aanpassen en lijnen toevoegen.
+  - Hulp bij aanroepen img en button: direct child (>) gebruiken. Anders wordt de code bij elke img:nth-of-type(aantal) of button:nth-of-type(aantal) toegepast.
+  - Hulp bij dropdown menu met sub menu's: javascript aanpassen (er mist een stukje code)
+
 
 </details>
 
@@ -334,8 +360,19 @@ visuele beperking:
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. bron 1: (https://fonts.googleapis.com/css2?family=Montserrat&display=swap) - huisstijl font MINDD importeren
+  2. bron 2: (https://codepen.io/shooft/pen/qBYPPwV) - inhoud hamburger menu ontzichtbaar maken:
+	transform:translateY(-150%);
+	z-index: -1;
+	position: fixed;
+	transition-duration:.4s;
+  3. bron 3: (https://codepen.io/shooft/pen/qBYPPwVInhoud) - hamburger menu zichtbaar maken
+	.open
+  transform:translateY(0%);
+	z-index: 0;
+  4. bron 4: (https://codepen.io/shooft/pen/ExLwQzm) - gezondheidsklachten lijstje op 1 rij zetten
+  display: flex;
+	overflow: auto;
+  
+  
 </details>
