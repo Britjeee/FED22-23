@@ -2,38 +2,512 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;  
 }
 
 button, summary {
 	cursor: pointer;
 }
 
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
+	--color-black:#111;
+	--color-grey:#EAEAEA;
 
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
+	/****************/
+	/* JOUW STYLING */
+	/****************/
+	--color-text-red:#E30613;
+	--color-text-blue:#20B3FC;
+	--color-white:#FFFFFF;
+	--color-text-grey:#616161;
+}	
 
 /* jouw code */
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+	/* gehele pagina */
+	margin: 0;
+	padding: 0;
+	color: var(--color-text);
+	background-color: var(--color-white);
+	overflow-x: hidden;
+	text-align: center;
+	font-family:"Montserrat",monospace;
 }
 
+header {
+	background-color: var(--color-white);
+	display: block;
+	border-bottom-left-radius: 0.7em;
+	border-bottom-right-radius: 0.7em;
+}
+
+/* mobiele header (logo, talen en hamburger menu) */
+header nav > ul:nth-of-type(1) {
+	/* header (1e ul) logo, taal en hamburger menu (parent)*/
+	padding: 0em;
+	margin: 0em;
+	height: 5.8em;
+	display: flex;
+	flex-grow: 1;
+
+	list-style: none;
+	font-size: 0.8em;
+}
+
+header nav > ul:nth-of-type(1) li {
+	/* header (1e ul) logo, taal en hamburger menu (children)*/
+	align-items: center;
+	flex-direction: row;
+	display: flex;
+	flex-grow: 1;
+	padding: 1em;
+}
+
+header nav > ul:nth-of-type(1) > li:nth-of-type(1) img {
+	/* (1e ul) logo in header */
+	width: 14em;
+}
+
+header nav > ul:nth-of-type(1) > li:nth-of-type(2) {
+	/* (1e ul) taal p*/
+	font-size: 1em;
+	font-weight:thin;
+}
+
+header nav > ul:nth-of-type(1) > li:nth-of-type(2) img {
+	/* (1e ul) taal img */
+	width: 2.5em;
+}
+
+header nav > ul:nth-of-type(1) li button {
+	/* (1e ul) hamburger menu styling*/
+	appearance: none;
+	border: none;
+	background-color: transparent;
+}
+
+header nav > ul:nth-of-type(1) li button img {
+	/* (1e ul) hamburger menu img styling*/
+	width: 1em;
+}
+
+/* Inhoud hamburger menu (website pagina's en kopjes) */
+header nav > ul:nth-of-type(2) {
+	/* (2e ul) pagina hoofdstukken (parent) */
+	margin: 0;
+	padding: 0;
+	padding-left: 1.5em;
+	display: flex;
+	flex-direction: column;
+
+	/* Inhoud hamburger menu ontzichtbaar maken */
+	transform:translateY(-150%);
+	z-index: -1;
+	position: fixed;
+	transition-duration:.4s;
+	/* Bron: https://codepen.io/shooft/pen/qBYPPwV */
+
+	text-align: left;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-size: 0.87em;
+}
+
+header nav > ul:nth-of-type(2) li {
+	/* (2e ul) pagina subhoofdstukken (children) */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 1em;
+}
+
+header nav > ul:nth-of-type(2) > li > a:nth-of-type(1) {
+	/* (2e ul) pagina subhoofdstukken (titels) */
+	color: var(--color-text-red);
+}
+
+header nav > ul:nth-of-type(2) > li:nth-of-type(1) {
+	padding-top: 1.5em;
+	padding-bottom: 2.5em;
+}
+
+header nav > ul:nth-of-type(2) li button {
+	/* (2e ul) pagina subhoofdstukken (>) */
+	visibility: hidden;
+}
+
+header nav > ul:nth-of-type(2) li ul {
+	/* (2e ul) pagina subhoofdstukken (children) */
+	margin: 0;
+	padding: 0;
+	padding-left: 1em;
+	line-height: 1.5em;
+}
+
+/* Inhoud hamburger menu zichtbaar maken */
+header nav > ul:nth-of-type(2).open {
+	transform:translateY(0%);
+	z-index: 0;
+	/* Bron: https://codepen.io/shooft/pen/qBYPPwV */
+
+	position: static;
+}
+
+/* Woorden rood benadrukt */
+main em {
+	color: var(--color-text-red);
+	font-style: normal;
+}
+
+/* section 1 = MINDD widget */
+main > section:nth-of-type(1) {
+	position: relative;
+}
+
+main > section:nth-of-type(1) img {
+	/* achtergrond afbeelding widget */
+	width: 100%;
+	height: 28em;
+	object-fit: cover;
+	position: relative;
+	top: -0.5em;
+	z-index: -1;
+}
+
+main > section:nth-of-type(1) form {
+	position: absolute;
+	top: 2.5em;
+	right: 2em;
+	bottom: 2em;
+	left: 2em;
+	margin: 0;
+}
+
+main > section:nth-of-type(1) h1 {
+	font-size: 0.5em;
+	line-height: 1.5em;
+	padding: 0.7em;
+	padding-bottom: 0.25em;
+	margin: 0;
+}
+
+main > section:nth-of-type(1) form p {
+	font-size: 0.5em;
+	line-height: 1.5em;
+	padding: 0.7em;
+	padding-top: 0.7em;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+main > section:nth-of-type(1) form > section:nth-of-type(1) p {
+	padding-top: 0em;
+}
+
+main > section:nth-of-type(1) form section:nth-child(1){
+	/* section 1 widget form */
+	display: block;
+	height: 4em;
+	background-color: var(--color-white);
+	border-bottom-left-radius: 0.3em;
+	border-bottom-right-radius: 0.75em;
+	border-top-right-radius: 0.3em;
+	margin-bottom: 0.5em;
+
+	font-size: 2.5em;
+	text-align: left;
+}
+
+main > section:nth-of-type(1) form section:nth-child(2){
+	/* section 2 widget form */
+	display: block;
+	height: 4em;
+	background-color: var(--color-white);
+	border-bottom-left-radius: 0.3em;
+	border-bottom-right-radius: 0.75em;
+	border-top-right-radius: 0.3em;
+
+	font-size: 2.5em;
+	text-align: left;
+}
+
+main > section:nth-of-type(1) form button{
+	/* widget button styling */
+	margin: 0;
+	height: 3.25em;
+	width: 5em;
+	border-color: var(--color-text-red);
+	background-color: var(--color-white);
+	color: var(--color-text-red);
+	border-width: 1px;
+	font-size: 0.4em;
+	font-weight: thin;
+}
+
+main > section:nth-of-type(1) form button:nth-of-type(1){
+	/* widget button (man) */
+	border-top-left-radius: 0.6em;
+	border-bottom-left-radius: 0.6em;
+	margin-left: 0.9em;
+	margin-right: -0.65em;
+}
+
+main > section:nth-of-type(1) form button:nth-of-type(2){
+	/* widget button (vrouw) */
+	border-top-right-radius: 0.75em;
+	border-bottom-right-radius: 0.75em;
+}
+
+main > section:nth-of-type(1) > form > a {
+	/* Gebruikersvoorwaarden link */
+	font-size: 0.75em;
+	font-style: italic;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* section 2 gezondheidsinformatie */
+main > section:nth-of-type(2) {
+	text-align: left;
+}
+
+main > section:nth-of-type(2) h1 {
+	/* gezondheidsinformatie titel */
+	color: var(--color-text-red);
+	margin: 0;
+	padding-left: 1.35em;
+	padding-top: 1.7em;
+	padding-bottom: 0.7em;
+	font-size: 1.35em;
+	text-align: left;
+}
+
+main > section:nth-of-type(2) ul {
+	/* gezondheidsinformatie list*/
+	margin: 0;
+	padding-left: 0.9em;
+	padding-top: 0;
+	list-style: none;
+	
+	display: flex;
+	overflow: auto;
+}
+main > section:nth-of-type(2) ul li {
+	/* gezondheidsinformatie list items */
+	margin: 0;
+	padding: 1.25em;
+	padding-bottom: 0;
+	position: relative;
+
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+	color: var(--color-text-red);
+}
+
+main > section:nth-of-type(2) ul li a {
+	position: relative;
+	top: -5.5em;
+}
+
+main > section:nth-of-type(2) img {
+	/* gezondheidsinformatie plaatjes */
+	width: 9.5em;
+	display: block;
+	z-index: -1;
+	background-color: var(--color-white);
+	padding-bottom: 7.5em;
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+	box-shadow: 0 3px 6px rgb(51 51 51 / 25%);
+}
+
+main > section:nth-of-type(2) button {
+	/* Meer klachten zoeken button */
+	border: var(--color-text-red);
+	background-color: var(--color-text-red);
+	border-radius: 0.5em;
+	color: var(--color-white);
+	font-weight: bold;
+	font-size: 0.95em;
+	line-height: 1.7em;
+	padding: 1em 2em 1em 2em;
+	margin: 2em;
+	margin-bottom: 5.5em;
+}
+
+/* section 3 app download */
+main > section:nth-of-type(3) > img:nth-of-type(1) {
+	/* achtergrond afbeelding app download */
+	width: 100%;
+	height: 36em;
+	object-fit: cover;
+	position: relative;
+	top: -0.5em;
+	z-index: -1;
+}
+
+main section:nth-of-type(3) > section {
+	/* hele section (block + inhoud) */
+	background-color: var(--color-white);
+	position: absolute;
+	display: block;
+	border-radius: 1.5em;
+	transform: translateY(-117%);
+	height: 30em;
+	margin: 1.25em;
+	padding: 1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+main > section:nth-of-type(3) h1 {
+	font-size: 2em;
+	font-weight: thin;
+}
+
+main > section:nth-of-type(3) section p {
+	font-size: 1.1em;
+	line-height: 1.85em;
+	margin: 0;
+}
+
+main > section:nth-of-type(3) section button {
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+main > section:nth-of-type(3) section button a{
+	display: flex;
+	flex-direction: row;
+}
+
+main > section:nth-of-type(3) section img {
+	width: 9em;
+}
+
+/* section 4 Nieuwsbrief */
+main > section:nth-of-type(4) {
+	padding-top: 1.5em;
+}
+
+main > section:nth-of-type(4) h1 {
+	color: var(--color-text-grey);
+	font-size: 1.25em;
+	margin: 0.6em;
+	margin-bottom: 1em;
+	line-height: 1.7em;
+}
+
+main > section:nth-of-type(4) em {
+	font-style: italic;
+}
+
+main > section:nth-of-type(4) p {
+	font-size: 1.25em;
+	margin: 0.6em;
+	line-height: 1.7em;
+}
+
+main > section:nth-of-type(4) input {
+	padding: 1.25em 6em 1.25em 1em;
+	margin-top: 2em;
+
+	border-radius:0.5em;
+	border-width: 1px;
+}
+
+main > section:nth-of-type(4) button {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	border-color: var(--color-black);
+	border-radius: 0.5em;
+
+	padding-left: 6em;
+	padding-right: 6em;
+	padding-top: 1.25em;
+	padding-bottom: 1.25em;
+	margin-top: 2em;
+	margin-bottom: 4em;
+
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+footer section {
+	text-align: left;
+	list-style: none;
+}
+
+footer section ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer section > ul:nth-of-type(4) {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+footer section img {
+	width: 2em;
+	margin: 0.25em;
+}
+
+footer section:nth-of-type(1) {
+	background-color: var(--color-grey);
+	font-size: 0.8em;
+}
+
+footer section:nth-of-type(2) {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+
+
+@media (min-width: 40em) {
+	/* styling desktop formaat */
+	header {
+		background-color: var(--color-white);
+
+	}
+
+	header nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+
+	}
+
+	header nav img {
+		/* logo in header */
+		width: 20em;
+	}
+
+	header nav ul {
+		/* header nav (pagina's) */
+		color: var(--color-text);
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.9em;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+}

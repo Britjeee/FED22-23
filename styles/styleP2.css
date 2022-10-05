@@ -1,0 +1,307 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing: border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-black:#111;
+	--color-grey:#EAEAEA;
+
+	/****************/
+	/* JOUW STYLING */
+	/****************/
+	--color-text-red:#E30613;
+	--color-text-blue:#20B3FC;
+	--color-white:#FFFFFF;
+	--color-text-grey:#616161;
+}	
+
+/* jouw code */
+
+body {
+	/* gehele pagina */
+	margin: 0;
+	padding: 0;
+	color: var(--color-text);
+	background-color: var(--color-white);
+	overflow-x: hidden;
+	font-family:"Montserrat",monospace;
+}
+
+header {
+	background-color: var(--color-white);
+	display: block;
+	border-bottom-left-radius: 0.7em;
+	border-bottom-right-radius: 0.7em;
+}
+
+/* mobiele header (logo, talen en hamburger menu) */
+
+header nav > ul:nth-of-type(1) {
+	/* header (1e ul) logo, taal en hamburger menu (parent)*/
+	padding: 0em;
+	margin: 0em;
+	height: 5.8em;
+	display: flex;
+	flex-grow: 1;
+
+	list-style: none;
+	font-size: 0.8em;
+}
+
+header nav > ul:nth-of-type(1) li {
+	/* header (1e ul) logo, taal en hamburger menu (children)*/
+	align-items: center;
+	flex-direction: row;
+	display: flex;
+	flex-grow: 1;
+	padding: 1em;
+}
+
+header nav > ul:nth-of-type(1) > li:nth-of-type(1) img {
+	/* (1e ul) logo in header */
+	width: 14em;
+}
+
+header nav > ul:nth-of-type(1) > li:nth-of-type(2) {
+	/* (1e ul) taal p*/
+	font-size: 1em;
+	font-weight:thin;
+}
+
+header nav > ul:nth-of-type(1) > li:nth-of-type(2) img {
+	/* (1e ul) taal img */
+	width: 2.5em;
+}
+
+header nav > ul:nth-of-type(1) li button {
+	/* (1e ul) hamburger menu styling*/
+	appearance: none;
+	border: none;
+	background-color: transparent;
+}
+
+header nav > ul:nth-of-type(1) li button img {
+	/* (1e ul) hamburger menu img styling*/
+	width: 1em;
+}
+
+/* Inhoud hamburger menu (website pagina's en kopjes) */
+
+header nav > ul:nth-of-type(2) {
+	/* (2e ul) pagina hoofdstukken (parent) */
+	margin: 0;
+	padding: 0;
+	padding-left: 1.5em;
+	display: flex;
+	flex-direction: column;
+
+	/* Inhoud hamburger menu ontzichtbaar maken */
+	transform:translateY(-150%);
+	z-index: -1;
+	position: fixed;
+	transition-duration:.4s;
+	/* Bron: https://codepen.io/shooft/pen/qBYPPwV */
+
+	text-align: left;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-size: 0.87em;
+}
+
+header nav > ul:nth-of-type(2) li {
+	/* (2e ul) pagina subhoofdstukken (children) */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 1em;
+}
+
+header nav > ul:nth-of-type(2) > li > a:nth-of-type(1) {
+	/* (2e ul) pagina subhoofdstukken (titels) */
+	color: var(--color-text-red);
+}
+
+header nav > ul:nth-of-type(2) > li:nth-of-type(1) {
+	padding-top: 1.5em;
+	padding-bottom: 2.5em;
+}
+
+header nav > ul:nth-of-type(2) li button {
+	/* (2e ul) pagina subhoofdstukken (>) */
+	visibility: hidden;
+}
+
+header nav > ul:nth-of-type(2) li ul {
+	/* (2e ul) pagina subhoofdstukken (children) */
+	margin: 0;
+	padding: 0;
+	padding-left: 1em;
+	line-height: 1.5em;
+}
+
+/* Inhoud hamburger menu zichtbaar maken */
+header nav > ul:nth-of-type(2).open {
+	transform:translateY(0%);
+	z-index: 0;
+	/* Bron: https://codepen.io/shooft/pen/qBYPPwV */
+
+	position: static;
+}
+
+/* Section 1 (wachtkamer video's) */
+main video {
+	width: 21em;
+	padding: 4em 2em 4em 2em;
+}
+
+
+
+/* Section 2 (Posters en banners) */
+
+/* Section 3 (Huisstijlpakket MINDD) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer section {
+	text-align: left;
+	list-style: none;
+}
+
+footer section ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer section > ul:nth-of-type(4) {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+footer section img {
+	width: 2em;
+	margin: 0.25em;
+}
+
+footer section:nth-of-type(1) {
+	background-color: var(--color-grey);
+	font-size: 0.8em;
+}
+
+footer section:nth-of-type(2) {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+
+
+@media (min-width: 40em) {
+	/* styling desktop formaat */
+	header {
+		background-color: var(--color-white);
+
+	}
+
+	header nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+
+	}
+
+	header nav img {
+		/* logo in header */
+		width: 20em;
+	}
+
+	header nav ul {
+		/* header nav (pagina's) */
+		color: var(--color-text);
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.9em;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+}

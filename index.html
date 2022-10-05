@@ -3,18 +3,259 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Britney van Zijl">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Howdy FED2223</title>
+	<title>Home - Moet Ik Naar De Dokter</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/faviconmoetiknaardedokter.svg">
 </head>
 
 <body>
-	<h1>Howdy FED2223</h1>
+	<header>
+		<nav>
+			<ul>
+				<!-- Mobiele header menu -->
+				<li>
+					<img src="images/MoetIkNaarDeDokter_Horizontaal.jpg" alt="moet ik naar de dokter logo">		
+				</li>
+				<li>
+					<a>NL</a>
+					<img src="images/nl.png" alt="Nederlands">
+				</li>
+				<li>
+					<button aria-label="Menu toggle">
+						<img src="images/menu-icon.svg" aria-hidden="true"/> 
+						<!-- Bron hamburger menu icon: https://freesvg.org/menu-icon-28851 -->
+					</button>
+				</li>
+			</ul>
+			<!-- Inhoud hamburger menu (website pagina's / kopjes) -->
+			<ul>
+				<li>
+					<a>WEBSITE VAN HET JAAR 2022</a>
+				</li>
+				<li>
+					<a>PATIËNT</a>
+					<button onclick="" aria-label="Dropdown menu">></button>
+					<ul>
+						<!-- Submenu -->
+						<li>
+							<a>Gezondheidsklachten</a>
+						</li>
+						<li>
+							<a>Digitale Corona zelftest</a>
+						</li>
+						<li>
+							<a>Vind mijn Huisartsenpost</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a>ZORGVERLENER</a>
+					<button onclick="" aria-label="Dropdown menu">></button>
+					<ul>
+						<!-- Submenu -->
+						<li>
+							<a>Informatie voor Huisartsen</a>
+						</li>
+						<li>
+							<a>Digitale zelftriage in uw dagpraktijk</a>
+						</li>
+						<li>
+							<a href="">Promotiemateriaal</a>
+						</li>
+						<li>
+							<a>Werken met de widget</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a>OVER ONS</a>
+					<button onclick="" aria-label="Dropdown menu">></button>
+					<ul>
+						<!-- Submenu -->
+						<li>
+							<a>Nieuws</a>
+						</li>
+						<li>
+							<a>Contact</a>
+						</li>
+						<li>
+							<a>Wetenschappelijke validatie</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
+	<main>
+		<!-- Section 1: MINDD widget -->
+		<section>
+			<img src="images/mindd-bg-blauw.png" alt="achtergrond afbeelding" aria-hidden="true">
+			<form>
+				<section>
+					<h1>Bepaal binnen <em>1 minuut</em> of u naar de dokter moet</h1>
+					<p>Wij voorzien u direct van advies</p>
+				</section>
+				<section>
+					<p>Bent u een man of een vrouw?</p>
+					<button>Man</button>
+					<button>Vrouw</button>
+				</section>
+				<a href="https://www.moetiknaardedokter.nl/gebruiksvoorwaarden/">Gebruikersvoorwaarden</a>
+			</form>
+		</section>
+		<!-- Section 2: Gezondheidsklachten -->
+		<section>
+			<h1>Gezondheidsinformatie</h1>
+			<ul>
+				<li>
+					<img src="images/blaasontsteking.jpg" alt="Blaasontsteking">
+					<a>Blaasontsteking</a>
+				</li>
+				<li>
+					<img src="images/koortsbijkinderen.jpg" alt="Koorts bij kinderen">
+					<a>Koorts bij kinderen</a>
+				</li>
+				<li>
+					<img src="images/coronavirus.jpg" alt="Coronavirus">
+					<a>Coronavirus</a>
+				</li>
+				<li>
+					<img src="images/buikpijn.jpg" alt="Buikpijn">
+					<a>Buikpijn</a>
+				</li>
+				<li>
+					<img src="images/griep.jpg" alt="Griep">
+					<a>Griep</a>
+				</li>
+				<li>
+					<img src="images/hoesten.jpg" alt="Hoesten">
+					<a>Hoesten</a>
+				</li>
+			</ul>
+			<button>Heeft u een andere klacht? Zoek hier alle klachten</button>
+		</section>
+		<!-- Section 3: Download de app -->
+		<section>
+			<img src="images/mindd-bg-blauw.png" alt="achtergrond afbeelding" aria-hidden="true">
+			<section>
+				<h1>Download onze <em>gratis</em> app</h1>
+				<p>Hardnekkige huiduitslag of een kind met koorts?</p>
+				<p>Iedereen twijfelt wel eens of een bezoek aan de huisarts nodig is.</p>
+				<button>
+					<a>
+						<img src="images/btn-playstore.png" alt="Google playstore link button">
+					</a>
+				</button>
+				<button>
+					<a>
+						<img src="images/btn-appstore.png" alt="Apple appstore link button">
+					</a>
+				</button>
+				<p>Meer dan 500.000 downloads</p>
+			</section>
+		</section>
+		<!-- Section 4: Nieuwsbrief -->
+		<section>
+			<h1>Wilt u op de hoogte gehouden worden van alle ontwikkelingen? <br>Meld u dan aan voor de <em>Moet ik naar de dokter?</em> <br>nieuwsbrief.</h1>
+			<p>Raadpleeg voor meer informatie onze <u>privacy- en cookieverklaring</u>.</p>
+			<input type="email" placeholder="Uw e-mailadres">
+			<button>Aanmelden</button>
+		</section>
+	</main>
+
+	<footer>
+		<section>
+			<!-- linkjes met extra info -->
+			<h3>Top 5 klachten</h3>
+			<ul>
+				<li>
+					<a>Buikpijn</a>
+				</li>
+				<li>
+					<a>Keelpijn</a>
+				</li>
+				<li>
+					<a>Koorts</a>
+				</li>
+				<li>
+					<a>Insectenbeet</a>
+				</li>
+			</ul>
+			<h3>Voor de zorgverlener</h3>
+			<ul>
+				<li>
+					<a>Waarom deze oplossing?</a>
+				</li>
+				<li>
+					<a>Verdubbel het gebruik van digitale zelftriage</a>
+				</li>
+				<li>
+					<a>Digitale zelftriage in uw dagpraktijk</a>
+				</li>
+				<li>
+					<a>Hoe het werkt</a>
+				</li>
+				<li>
+					<a>Aanvraag Moet Ik Naar De Dokter API key</a>
+				</li>
+			</ul>
+			<h3>Over ons</h3>
+			<ul>
+				<li>
+					<a>Wie is Moet Ik Naar De Dokter?</a>
+				</li>
+				<li>
+					<a>Het verhaal van Moet Ik Naar De Dokter?</a>
+				</li>
+				<li>
+					<a>Wetenschappelijke validatie</a>
+				</li>
+			</ul>
+			<!-- Contactgegevens -->
+			<h3>Contact</h3>
+			<p>Prins Willem-Alexanderlaan 705</p>
+			<p>7311 ST Apeldoorn</p>
+			<!-- social media linkjes -->
+			<ul>
+				<li>
+					<img src="images/facebook-icon.png" alt="Link naar Facebook" aria-label="Link naar Facebook">
+				</li>
+				<li>
+					<img src="images/linkedin-icon.png" alt="Link naar LinkedIn" aria-label="Link naar LinkedIn">
+				</li>
+				<li>
+					<img src="images/instagram-icon.png" alt="Link naar Instagram" aria-label="Link naar Instagram">
+				</li>
+			</ul>
+		</section>
+		<!-- Wettelijke info linkjes -->
+		<section>
+			<ul>
+				<li>
+					<a>Cookieverklaring</a>
+				</li>
+				<li>
+					<a>Privacyverklaring</a>
+				</li>
+				<li>
+					<a>Gebruikersvoorwaarden</a>
+				</li>
+				<li>
+					<a>Responsible disclosure</a>
+				</li>
+				<li>
+					<a>Sitemap</a>
+				</li>
+			</ul>
+			<p>@ Copyright 2022 - Moet Ik Naar De Dokter</p>
+		</section>
+	</footer>
+	<!-- Het javascript bestand staat onderaan zodat de pagina eerst geladen wordt voordat de code activeerd -->
 	<script defer src="scripts/script.js"></script>
 </body>
 	
